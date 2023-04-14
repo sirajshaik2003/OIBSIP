@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div>
+    <h1>Calculator</h1>
+    <form id="form" name="calc" style="text-align: center;">
+        <input type="text" name="display" 
+        style="width: 570px;
+               height: 80px;
+               margin-top: 15px;
+               background-color:rgb(97, 172, 238);"><br>
+
+        <input type="button" value="7" onclick="calc.display.value+='7'"/>
+        <input type="button" value="8" onclick="calc.display.value+='8'"/>
+        <input type="button" value="9" onclick="calc.display.value+='9'"/>
+        <input type="button" value="C" onclick="calc.display.value=' '" style="background-color: rgb(225, 126, 126);"/><br>
+
+        <input type="button" value="4" onclick="calc.display.value+='4'"/>
+        <input type="button" value="5" onclick="calc.display.value+='5'"/>
+        <input type="button" value="6" onclick="calc.display.value+='6'"/>
+        <input type="button" value="+" onclick="calc.display.value+='+'" style="background-color: rgb(6, 119, 218);"/><br>
+
+        <input type="button" value="1" onclick="calc.display.value+='1'"/>
+        <input type="button" value="2" onclick="calc.display.value+='2'"/>
+        <input type="button" value="3" onclick="calc.display.value+='3'"/>
+        <input type="button" value="-" onclick="calc.display.value+='-'" style="background-color: rgb(6, 119, 218);"/><br>
+
+        <input type="button" value="*" onclick="calc.display.value+='*'" style="background-color: rgb(6, 119, 218);"/>
+        <input type="button" value="0" onclick="calc.display.value+='0'"/>
+        <input type="button" value="/" onclick="calc.display.value+='/'" style="background-color: rgb(6, 119, 218);"/>
+        <input type="button" value="=" onclick="calc.display.value=eval(calc.display.value)"
+        style="background-color: #153cea;"/>
+        
+    </form>
+</div>
+</body>
+</html>
